@@ -1,0 +1,6 @@
+#! /bin/bash
+
+while inotifywait -e modify /nfs-A; do
+	gcc -o cFile third.c
+	./cFile
+done
