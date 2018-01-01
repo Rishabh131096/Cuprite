@@ -1,6 +1,0 @@
-#! /bin/bash
-
-while inotifywait -e modify /nfs-B; do
-	gcc -o cFile second.c
-	./cFile
-done
